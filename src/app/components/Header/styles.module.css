@@ -1,16 +1,15 @@
 .header {
-  padding: 1rem;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  background: var(--mauve);
 }
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 /* Scoped to component only */
 .link {
-  color: #333;
+  color: var(--crust);
   text-decoration: none;
 }
