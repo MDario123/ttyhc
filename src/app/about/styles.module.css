@@ -1,0 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 1rem;
+  padding-left: max(2rem, 10%);
+  padding-right: max(2rem, 10%);
+}
+
+.layout h1 {
+  font-size: 3rem;
+  margin: 0.7rem 0;
+}
+
+.layout h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.layout a {
+  color: var(--mauve);
+  text-decoration-line: underline;
+}
