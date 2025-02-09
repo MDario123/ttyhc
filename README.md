@@ -3,8 +3,10 @@
 ## TODO
 
 - [ ] Has enough styling to make it feel like an app.
-- [ ] Provides a home page, at least one static page, and at least one dynamic page.
-- [ ] All routes must have their own `metadata` with a minimum of title tag and description.
+- [x] Provides a home page.
+- [x] Provides at least one static page.
+- [ ] Provides at least one dynamic page.
+- [x] All routes must have their own `metadata` with a minimum of title tag and description.
 - [x] All layouts are server components.
 - [x] Contains a root layout with navigation.
 - [ ] Contains at least one nested layout.
