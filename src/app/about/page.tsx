@@ -17,7 +17,7 @@ export default function About() {
       <p>Clicky buttons.</p>
       <h2>Place</h2>
       <p>
-        Right <Link href="/">here</Link>.
+        Right <Link href="/playground">here</Link>.
       </p>
     </div>
   );

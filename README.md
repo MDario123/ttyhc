@@ -2,15 +2,15 @@
 
 ## TODO
 
-- [ ] Has enough styling to make it feel like an app.
+- [x] Has enough styling to make it feel like an app.
 - [x] Provides a home page.
 - [x] Provides at least one static page.
 - [ ] Provides at least one dynamic page.
 - [x] All routes must have their own `metadata` with a minimum of title tag and description.
 - [x] All layouts are server components.
 - [x] Contains a root layout with navigation.
-- [ ] Contains at least one nested layout.
-- [ ] Contains at least one client component.
+- [x] Contains at least one nested layout.
+- [x] Contains at least one client component.
 - [ ] Renders at least one server component inside a client component.
 - [ ] Provides (and uses) at least one API route.
 - [ ] Fetches server-side data on at least one page.

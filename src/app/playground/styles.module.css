@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+  padding-top: 1rem;
+  padding-left: max(2rem, 10%);
+  padding-right: max(2rem, 10%);
+
+  width: 100%;
+}
