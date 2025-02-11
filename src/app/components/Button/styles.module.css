@@ -1,27 +1,30 @@
 .toggle {
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 2rem;
+  padding: 0.25rem;
 
-  border-radius: 0.25rem;
+  border-radius: 10rem;
 
   background-color: var(--surface2);
 
   transition: 0.2s ease-out;
 }
 
-.toggle.off {
-  padding: 0.25rem;
+.off div {
+  position: relative;
+  left: 0;
 }
 
-.toggle.on {
-  padding: 0.75rem;
+.on div {
+  position: relative;
+  left: 50%;
 }
 
 .toggle>div {
-  width: 100%;
+  width: 50%;
   height: 100%;
 
-  border-radius: 0.25rem;
+  border-radius: 50%;
 
   background-color: var(--base);
 
@@ -35,25 +38,17 @@
   width: 50%;
   height: 50%;
 
-  border-radius: 0.25rem;
+  border-radius: 50%;
 
   transition: 0.2s ease-out;
 
   scale: 0;
 }
 
-.toggle:hover.off div {
-  scale: 0.9;
-}
-
-.toggle:active.off div {
+.toggle:hover div {
   scale: 1.1;
 }
 
-.toggle:hover.on div {
-  scale: 1.1;
-}
-
-.toggle:active.on div {
+.toggle:active div {
   scale: 0.9;
 }
