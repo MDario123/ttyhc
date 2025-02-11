@@ -1,6 +1,6 @@
 "use client";
 
-import { clickies, interactiveClickies } from "@/lib/clickies";
+import { clickies, interactiveClickies } from "@/shared/Clickies";
 import { JSX, useEffect, useState } from "react";
 
 export default function Playground() {

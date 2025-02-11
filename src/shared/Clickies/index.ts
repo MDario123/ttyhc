@@ -1,5 +1,5 @@
-import Button from "@/app/components/Button/Button";
-import Toggle from "@/app/components/Toggle/Toggle";
+import Button from "./Button";
+import Toggle from "./Toggle";
 import { ReactNode } from "react";
 
 const Clickies = ["toggle", "button"] as const;

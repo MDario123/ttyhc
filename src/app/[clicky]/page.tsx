@@ -1,4 +1,4 @@
-import { clickies, Clicky, interactiveClickies } from "@/lib/clickies";
+import { clickies, Clicky, interactiveClickies } from "@/shared/Clickies";
 import { notFound } from "next/navigation";
 
 export default async function SingleClicky({

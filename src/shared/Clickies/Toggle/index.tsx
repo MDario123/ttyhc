@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import styles from "./styles.module.css";
-import { colors } from "@/lib/colors";
+import { colors } from "@/shared/Colors";
 
-export default function Button() {
+export default function Toggle() {
   const [[isToggled, colorIdx], setIsToggled] = useState([false, 0]);
 
   const toggle = () => {
