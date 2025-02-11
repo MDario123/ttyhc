@@ -1,10 +1,4 @@
-import { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "About",
-  description: "This page tells you what this is all about",
-};
 
 export default function About() {
   return (
