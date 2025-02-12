@@ -4,12 +4,10 @@ import type { Clicky } from "@/shared";
 import type { JSX } from "react";
 import Link from "next/link";
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
 async function getDailyClicky(): Promise<Clicky> {
-  const res: unknown = await (
-    await fetch(api_address + "/daily")
-  ).json();
+  const res: unknown = await (await fetch(api_address.daily)).json();
   if (!isClicky(res)) {
     throw new Error("Invalid clicky");
   }
