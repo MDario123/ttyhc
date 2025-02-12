@@ -1,4 +1,9 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   padding: 0.8rem;
   background: var(--mauve);
 
@@ -14,4 +19,59 @@
 .link {
   color: var(--crust);
   text-decoration: none;
+}
+
+.toggle {
+  width: 2.5rem;
+  height: 1.5rem;
+  padding: 0.1875rem;
+
+  border-radius: 10rem;
+
+  background-color: var(--surface2);
+
+  transition: 0.2s ease-out;
+}
+
+.off div {
+  position: relative;
+  left: 0;
+}
+
+.on div {
+  position: relative;
+  left: 50%;
+}
+
+.toggle>div {
+  width: 50%;
+  height: 100%;
+
+  border-radius: 50%;
+
+  background-color: var(--base);
+
+  transition: 0.2s ease-out;
+}
+
+.toggle>div>div {
+  position: relative;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+
+  border-radius: 50%;
+
+  transition: 0.2s ease-out;
+
+  scale: 0;
+}
+
+.toggle:hover div {
+  scale: 1.1;
+}
+
+.toggle:active div {
+  scale: 0.9;
 }

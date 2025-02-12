@@ -3,10 +3,11 @@
 import type { JSX } from "react";
 import { useState } from "react";
 import styles from "./styles.module.css";
-import { colors } from "@/shared/Colors";
+import { colors, useClickiesContext } from "@/shared";
 
 export default function Button(): JSX.Element {
   const [[isToggled, colorIdx], setIsToggled] = useState([false, 0]);
+  const clickiesContext = useClickiesContext();
 
   const toggle = () => {
     setIsToggled(([isToggled, colorIdx]) => {
@@ -23,6 +24,9 @@ export default function Button(): JSX.Element {
         backgroundColor: isToggled ? color : undefined,
       }}
       onClick={() => toggle()}
+      onMouseEnter={
+        clickiesContext.sensitiveClickies ? () => toggle() : undefined
+      }
     >
       <div>
         <div style={{ backgroundColor: color }} />

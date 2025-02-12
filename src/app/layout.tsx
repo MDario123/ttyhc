@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import type { JSX } from "react";
 import { Suspense } from "react";
 import Header from "./Header";
+import { ClickiesContextProvider } from "@/shared";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Suspense>{children}</Suspense>
+        <ClickiesContextProvider>
+          <Header />
+          <Suspense>{children}</Suspense>
+        </ClickiesContextProvider>
       </body>
     </html>
   );
