@@ -4,6 +4,8 @@ import type { Clicky } from "@/shared";
 import type { JSX } from "react";
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+
 async function getDailyClicky(): Promise<Clicky> {
   const res: unknown = await (
     await fetch("http://127.0.0.1:3000/api/daily")
@@ -21,7 +23,7 @@ export default async function Home(): Promise<JSX.Element> {
       <div className={styles.titleWrapper}>
         <h1 className={styles.title}>TTYHC</h1>
         <p className={styles.titleClarification}>
-          Tinker To Your Heart's Content
+          Tinker To Your Heart{"'"}s Content
         </p>
       </div>
       <p className={styles.introduction}>
