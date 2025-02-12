@@ -1,4 +1,4 @@
-import { clickies } from "@/lib/clickies";
+import { clickies } from "@/shared/Clickies";
 
 export function getClickyFromDay(day: number) {
   return clickies[Math.floor(day % clickies.length)];
