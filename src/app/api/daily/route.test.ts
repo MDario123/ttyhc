@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom";
-import { getClickyFromDay } from "./route";
+import { getClickyFromDay } from "./helper";
 import { clickies } from "@/shared/Clickies";
 
 describe("Daily clicky", () => {
