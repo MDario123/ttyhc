@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { getClickyFromDay } from "./route";
-import { clickies } from "@/lib/clickies";
+import { clickies } from "@/shared/Clickies";
 
 describe("Daily clicky", () => {
   test("should return a clicky", async () => {
