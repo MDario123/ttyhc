@@ -1,10 +1,11 @@
 "use client";
 
+import type { JSX } from "react";
 import { useState } from "react";
 import styles from "./styles.module.css";
 import { colors } from "@/shared/Colors";
 
-export default function Toggle() {
+export default function Toggle(): JSX.Element {
   const [[isToggled, colorIdx], setIsToggled] = useState([false, 0]);
 
   const toggle = () => {

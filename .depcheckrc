@@ -1,0 +1,15 @@
+ignore-dirs:
+  - dist
+
+ignores:
+  - "@types/*"
+  - "@eslint/eslintrc"
+  - "@testing-library/dom"
+  - "@testing-library/react"
+  - eslint-import-resolver-typescript
+  - eslint-config-next
+  - jest-environment-jsdom
+  - jsdom
+  - ts-node
+  - ts-jest
+  - typescript-plugin-*

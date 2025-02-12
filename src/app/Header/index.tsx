@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Link from "next/link";
 import styles from "./styles.module.css";
 
@@ -6,7 +7,7 @@ const links = [
   { href: "/about", label: "About" },
 ];
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>

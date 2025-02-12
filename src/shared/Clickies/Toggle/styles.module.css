@@ -20,7 +20,7 @@
   left: 50%;
 }
 
-.toggle>div {
+.toggle > div {
   width: 50%;
   height: 100%;
 
@@ -31,7 +31,7 @@
   transition: 0.2s ease-out;
 }
 
-.toggle>div>div {
+.toggle > div > div {
   position: relative;
   left: 25%;
   top: 25%;

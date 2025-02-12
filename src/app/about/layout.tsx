@@ -1,5 +1,6 @@
+import type { Metadata } from "next";
+import type { JSX } from "react";
 import styles from "./styles.module.css";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About",
@@ -10,6 +11,6 @@ export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): JSX.Element {
   return <div className={styles.layout}>{children}</div>;
 }

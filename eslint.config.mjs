@@ -34,9 +34,6 @@ export default tseslint.config(
   tseslint.configs.stylisticTypeChecked,
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
-  reactHooksPlugin.configs["recommended-latest"],
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat["jsx-runtime"],
   {
     rules: {
       "no-console": ["warn", { allow: ["warn", "error"] }],
