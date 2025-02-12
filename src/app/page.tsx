@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { isClicky } from "@/shared";
+import { api_address, isClicky } from "@/shared";
 import type { Clicky } from "@/shared";
 import type { JSX } from "react";
 import Link from "next/link";
@@ -8,7 +8,7 @@ export const dynamic = 'force-dynamic';
 
 async function getDailyClicky(): Promise<Clicky> {
   const res: unknown = await (
-    await fetch("http://127.0.0.1:3000/api/daily")
+    await fetch(api_address + "/daily")
   ).json();
   if (!isClicky(res)) {
     throw new Error("Invalid clicky");
