@@ -1,0 +1,72 @@
+.pageLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: max(2rem, 10%);
+  padding-right: max(2rem, 10%);
+
+  gap: 1em;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0;
+}
+
+.title {
+  font-size: 4em;
+  letter-spacing: 0.1em;
+}
+
+.titleClarification {
+  position: relative;
+  top: -0.7em;
+  word-spacing: 1.2em;
+  font-size: 0.8em;
+}
+
+.introduction {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.linkWrapper {
+  height: 2em;
+  width: 8em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.linkButton {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.8em;
+  height: 90%;
+  width: 90%;
+  border-radius: 0.5em;
+  background: var(--mauve);
+  color: var(--crust);
+
+  &:hover {
+    height: 100%;
+    line-height: 2em;
+    width: 95%;
+  }
+
+  &:active {
+    height: 80%;
+    line-height: 1.6em;
+    width: 80%;
+  }
+
+  transition: 0.1s ease-out;
+}

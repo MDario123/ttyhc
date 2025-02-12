@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/playground", label: "Playground" },
 ];
 
 export default function Header(): JSX.Element {
