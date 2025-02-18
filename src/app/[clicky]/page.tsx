@@ -1,6 +1,5 @@
-import type { Clicky } from "@/shared/Clickies";
 import type { JSX } from "react";
-import { clickies, interactiveClickies } from "@/shared/Clickies";
+import { interactiveClickies, isClicky } from "@/shared/Clickies";
 import { notFound } from "next/navigation";
 
 export default async function SingleClicky({
@@ -10,11 +9,11 @@ export default async function SingleClicky({
 }): Promise<JSX.Element> {
   const clicky = (await params).clicky;
 
-  if (!clickies.includes(clicky as Clicky)) {
+  if (!isClicky(clicky)) {
     notFound();
   }
 
-  const InteractiveClicky = interactiveClickies[clicky as Clicky];
+  const InteractiveClicky = interactiveClickies[clicky];
 
   return <InteractiveClicky />;
 }
